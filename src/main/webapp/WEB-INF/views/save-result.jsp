@@ -7,9 +7,9 @@
 <body>
 <h1>글작성 성공!!!</h1>
 <ul>
-    <li>id=<%=post.getId()%></li>
-    <li>title=<%=post.getTitle()%></li>
-    <li>content=<%=post.getContent()%></li>
+    <li>id=${post.getId()}</li>
+    <li>title=${post.getTitle()}</li>
+    <li>content=${post.getContent()}</li>
 </ul>
 </body>
 </html>
