@@ -6,7 +6,6 @@
     <title>글 목록 조회</title>
 </head>
 <body>
-<a href="/index.html">홈 화면으로 돌아가기</a>
 <table>
     <thead>
     <th>id</th>
@@ -14,15 +13,13 @@
     <th>content</th>
     </thead>
     <tbody>
-    <%
-        for (Post post : posts) {
-            out.write("<tr>");
-            out.write("  <td>" + post.getId() + "</td>");
-            out.write("  <td>" + post.getTitle() + "</td>");
-            out.write("  <td>" + post.getContent() + "</td>");
-            out.write("</tr>");
-        }
-    %>
+    <c:forEach var="post" items="${posts}">
+        <tr>
+            <td>${post.id}</td>
+            <td>${post.title}</td>
+            <td>${post.content}</td>
+        </tr>
+    </c:forEach>
     </tbody>
 </table>
 </body>
