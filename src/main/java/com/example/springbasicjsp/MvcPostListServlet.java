@@ -12,7 +12,7 @@ import java.util.List;
 
 @WebServlet(
         name = "mvcPostListServlet",
-        urlPatterns = "/mvc/posts"
+        urlPatterns = "/mvc/posts/list"
 )
 public class MvcPostListServlet extends HttpServlet {
 
